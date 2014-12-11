@@ -3,10 +3,8 @@ python:
 - 2.7
 
 install:
-- pip install flake8
+- pip install pep8
 
-before_script:
-- flake8 test.py
 
 script:
-- python test.py test
+nosetests
